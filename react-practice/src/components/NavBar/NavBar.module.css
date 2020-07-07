@@ -16,3 +16,12 @@
   width: 30%;
   font-size: 20px;
 }
+
+.navBar li, .mainHeader h2 {
+  cursor: pointer;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
