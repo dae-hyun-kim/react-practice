@@ -6,6 +6,12 @@ const About = () => {
     return 0
   })
 
+  const [recipe, setRecipe] = useState(async () => {
+    const data = await fetch("https://api.openbrewerydb.org/breweries/");
+    const item = await data.json();
+    console.log(item)
+  })
+
   const increment = () => {
     setCount(prevCount => prevCount + 1)
   }
