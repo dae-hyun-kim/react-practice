@@ -2,16 +2,25 @@ import React, { useState } from "react";
 
 const About = () => {
 
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(() => {
+    return 0
+  })
 
-  console.log(count)
+  const increment = () => {
+    setCount(prevCount => prevCount + 1)
+  }
+
+  const decrement = () => {
+    setCount(prevCount => prevCount - 1)
+  }
+
   return (
     <>
     <h3>ABOUT PAGE</h3>
       <div>
-        <button> - </button>
+        <button onClick={decrement}> - </button>
         {count}
-        <button> + </button>
+        <button onClick={increment}> + </button>
       </div>
     </>
   )
