@@ -1,0 +1,18 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-around;
+  background-color: beige;
+}
+
+.logo {
+  font-size: 45px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 30%;
+  font-size: 20px;
+}
