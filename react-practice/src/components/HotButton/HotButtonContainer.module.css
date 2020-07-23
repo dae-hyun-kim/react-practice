@@ -1,0 +1,43 @@
+.container {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 70px;
+  border: 2px solid black;
+}
+
+.countContainer {
+  margin-bottom: 15px;
+}
+
+.hotButton {
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.hotButton:hover {
+  cursor: pointer;
+}
+
+.purple {
+  background: purple;
+}
+
+.violet {
+  background: violet;
+}
+
+.lightOrange {
+  background: lightsalmon;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.white {
+  background: white;
+}
