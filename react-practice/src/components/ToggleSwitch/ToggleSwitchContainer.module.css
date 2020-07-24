@@ -1,0 +1,41 @@
+.container {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 70px;
+  border: 2px solid black;
+}
+
+.toggleContainer {
+  width: 70px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.off {
+  background: grey;
+}
+
+.on {
+  background: green;
+}
+
+.toggleContainer:hover {
+  cursor: pointer;
+}
+
+.toggle {
+  width: 30px;
+  height: 33px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

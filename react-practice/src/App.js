@@ -3,10 +3,11 @@ import './App.css';
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./routes/Home"
 import HotButton from "./routes/HotButton";
-import Contact from "./routes/Contact";
+import ToggleSwitch from "./routes/ToggleSwitch";
 import Form from "./routes/Form";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HotButtonContextProvider from './contexts/HotButtonContext';
+import ToggleSwitchContainerProvider from "./contexts/ToggleSwitchContext"
 
 const App = () => {
 
@@ -16,14 +17,16 @@ const App = () => {
     <Router>
       <div className="App">
         <NavBar/>
+        <ToggleSwitchContainerProvider>
+        <HotButtonContextProvider>
           <Switch>
-            <HotButtonContextProvider>
               <Route path="/" exact component={Home}/>
-              <Route path="/about" exact component={HotButton} />
-              <Route path="/contact" exact component={Contact} />
+              <Route path="/HotButton" exact component={HotButton} />
+              <Route path="/ToggleSwitch" exact component={ToggleSwitch} />
               <Route path="/form" exact component={Form} />
-            </HotButtonContextProvider>
           </Switch>
+        </HotButtonContextProvider>
+        </ToggleSwitchContainerProvider>
       </div>
     </Router>
   );
