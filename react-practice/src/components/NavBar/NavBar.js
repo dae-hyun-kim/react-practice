@@ -9,11 +9,11 @@ const NavBar = () => {
       <h2 className={styles.logo}>REACT PRACTICE</h2>
       </Link>
       <ul className={styles.navBar}>
-        <Link to="/about">
+        <Link to="/HotButton">
           <li>Hot Button</li>
         </Link>
-        <Link to="/contact">
-          <li>Contact</li>
+        <Link to="/ToggleSwitch">
+          <li>Toggle Switch</li>
         </Link>
         <Link to="/form">
           <li>Form</li>
